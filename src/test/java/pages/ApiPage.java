@@ -29,18 +29,14 @@ public class ApiPage {
             case "DELETE_USER":
                 setURL = EndPoint.DELETE_USER;
                 break;
-
             default:
                 System.out.println("Input a valid URL");
-
         }
 
     }
 
     public void hitTheGetAPI(){
         res = getListUsers(setURL);
-        System.out.println(res.getBody().asString());
-
     }
 
     public void validateStatusCode(int statusCode){
