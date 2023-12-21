@@ -51,6 +51,6 @@ jobs:
       if: always()
       uses: peaceiris/actions-gh-pages@v3.9.3
       with:
-        PERSONAL_TOKEN: ${{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}}
+        PERSONAL_TOKEN: ${{ secrets.SECRET_TOKEN }}
         PUBLISH_DIR: reports
     
